@@ -22,15 +22,30 @@ export default function Feature() {
 
   return (
     <>
-      <div className="container">
+      <div className="container mt-6">
         <div className="row">
           <div className="col">
             <h1>Feature</h1>
             {data && (
-              <ul>
+              <ul className="list-unstyled">
                 {data.map((d, i) => (
                   <li key={i}>
-                    <p>{`${d.properties.SUBTYPE}: ${d._id}`}</p>
+                    <p className="tight-p">
+                      <span className="strong">_id: </span>
+                      {`${d._id}`}
+                    </p>
+                    <p className="tight-p">
+                      <span className="strong">SUBTYPE: </span>
+                      {`${d.properties.SUBTYPE}`}
+                    </p>
+                    <p className="tight-p">
+                      <span className="strong">CATEGORY: </span>
+                      {`${d.properties.CATEGORY}`}
+                    </p>
+                    <p className="tight-p">
+                      <span className="strong">LANDS_NAME: </span>
+                      {`${d.properties.LANDS_NAME}`}
+                    </p>
                   </li>
                 ))}
               </ul>

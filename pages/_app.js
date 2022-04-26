@@ -1,7 +1,9 @@
 // pages/_app.js
 
 import Head from "next/head";
+
 import "../styles/global-vars.scss";
+import "mapbox-gl/dist/mapbox-gl.css";
 import "../styles/globals.css";
 
 const App = ({ Component, pageProps }) => {

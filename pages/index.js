@@ -7,7 +7,7 @@ import useSWR from "swr";
 const fetcher = async (url) =>
   await axios.get(url).then((res) => res.data.features);
 
-export default function Features() {
+const Features = () => {
   // swr
   const address = "http://localhost:3000/api/features";
   const { data, error } = useSWR(address, fetcher, {
@@ -24,12 +24,12 @@ export default function Features() {
 
   return (
     <>
-      <div className="container">
+      <div className="container mt-6">
         <div className="row">
           <div className="col">
             <h1>Features</h1>
             {data && (
-              <ul>
+              <ul className="list-unstyled">
                 {data.map((d, i) => (
                   <li key={i}>
                     <Link href="/feature/[id]" as={`/feature/${d._id}`}>
@@ -46,4 +46,6 @@ export default function Features() {
       </div>
     </>
   );
-}
+};
+
+export default Features;
