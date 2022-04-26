@@ -25,14 +25,14 @@ module.exports = async (req, res) => {
   if (req.method === "GET") {
     const { db } = await connectToDatabase();
     const collection = await db.collection(col);
-    const landsnames = await collection
+    const inregion = await collection
       .aggregate([
         { $match: geoquery },
-        { $group: lands_name },
+        // { $group: lands_name },
         { $sort: { count: -1, "properties.LANDS_NAME": 1 } },
       ])
       .toArray();
-    res.status(200).json({ landsnames });
+    res.status(200).json({ inregion });
   } else {
     res.status(404).json({ status: "Error route not found" });
   }

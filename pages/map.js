@@ -5,11 +5,11 @@ import useSWR from "swr";
 import Map from "../components/Map";
 
 const fetcher = async (url) =>
-  await axios.get(url).then((res) => res.data.features);
+  await axios.get(url).then((res) => res.data.inregion);
 
 const MapApp = () => {
   // swr
-  const address = "http://localhost:3000/api/features";
+  const address = "http://localhost:3000/api/inregion";
   const { data, error } = useSWR(address, fetcher, {
     revalidateOnFocus: false,
   });
