@@ -5,18 +5,18 @@ import axios from "axios";
 import useSWR from "swr";
 
 const fetcher = async (url) =>
-  await axios.get(url).then((res) => res.data.todos);
+  await axios.get(url).then((res) => res.data.features);
 
 export default function Features() {
-  //
-  const address = "http://localhost:3000/api/todos";
+  // swr
+  const address = "http://localhost:3000/api/features";
   const { data, error } = useSWR(address, fetcher, {
     revalidateOnFocus: false,
   });
 
   // find feature
   const findFeature = (id) => {
-    console.log("FIND", id);
+    console.log("FIND FEATURE", id);
   };
 
   if (error) <h1>Loading failed...</h1>;
@@ -27,12 +27,12 @@ export default function Features() {
       <div className="container">
         <div className="row">
           <div className="col">
-            <h1>Todos</h1>
+            <h1>Features</h1>
             {data && (
               <ul>
                 {data.map((d, i) => (
                   <li key={i}>
-                    <Link href="/todo/[id]" as={`/todo/${d._id}`}>
+                    <Link href="/feature/[id]" as={`/feature/${d._id}`}>
                       <a
                         onClick={() => findFeature(d._id)}
                       >{`${d.properties.SUBTYPE}: ${d._id}`}</a>

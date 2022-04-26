@@ -4,7 +4,7 @@ import Head from "next/head";
 import "../styles/global-vars.scss";
 import "../styles/globals.css";
 
-const MyApp = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
   return (
     <>
       <Component {...pageProps} />
@@ -40,4 +40,4 @@ const MyApp = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default App;
