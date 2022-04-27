@@ -2,11 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-### next, mongodb, swr, bootstrap, mapbox-gl
+### next, mongodb, swr, axios, bootstrap, mapbox-gl
 
-Setting up an api with a collection of geojson map features in mongodb.
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- Set up a Next.js API that uses SWR and Axios to connect to a Mongodb collection of geojson map features.
+- Filter the geojson features with queries and aggregations to create - layers on a Mapbox map.
+- Use the interactive map and Bootstrap forms to filter, create, update, or delete features in the database.
 
 ## Getting Started
 
@@ -26,8 +26,8 @@ npm run dev
 yarn dev
 ```
 
-- [http://localhost:3000](http://localhost:3000) - open the dev version of the app in your browser
-- [API endpoints](https://nextjs.org/docs/api-routes/introduction) - access endpoints [http://localhost:3000/api/features](http://localhost:3000/api/features).
+- [http://localhost:3000/features](http://localhost:3000/features) - open a page in your browser
+- [http://localhost:3000/api/features](http://localhost:3000/api/features) - access the page's endpoint
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
