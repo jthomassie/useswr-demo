@@ -1,8 +1,8 @@
 // pages/add-feature.js
 
 import { useState } from "react";
-import Head from "next/head";
-import Nav from "../components/Nav";
+// import Head from "next/head";
+// import Nav from "../components/Nav";
 
 const AddFeature = () => {
   //
@@ -53,10 +53,10 @@ const AddFeature = () => {
 
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>Add Feature</title>
-      </Head>
-      <Nav />
+      </Head> 
+      <Nav /> */}
       <div className="container mt-6">
         <div className="row">
           <h2 className="m-0 mb-2">Add feature</h2>
