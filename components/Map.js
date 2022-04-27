@@ -194,8 +194,8 @@ const Map = ({ mapdata }) => {
     // on map load
     map.on("load", () => {
       // add 'features' layer
-      const fCircleRadius = ["interpolate", ["linear"], ["zoom"], 5, 4, 16, 9];
-      const fOpacity = ["interpolate", ["linear"], ["zoom"], 5, 0, 5.5, 1];
+      const fCircleRadius = ["interpolate", ["linear"], ["zoom"], 2, 2, 16, 9];
+      const fOpacity = ["interpolate", ["linear"], ["zoom"], 5, 1, 5.5, 1];
       //
       // map,
       // data,
@@ -238,7 +238,7 @@ const Map = ({ mapdata }) => {
 
   // update map on mapdata load
   useEffect(() => {
-    if (map == null) {
+    if (!map) {
       return;
     }
     setMapdata(mapData);
