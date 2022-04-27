@@ -26,6 +26,8 @@ npm run dev
 yarn dev
 ```
 
+View in your browser:
+
 - [http://localhost:3000/features](http://localhost:3000/features) - open a page in your browser
 - [http://localhost:3000/api/features](http://localhost:3000/api/features) - access the page's endpoint
 
