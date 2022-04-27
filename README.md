@@ -2,15 +2,15 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-### next, mongodb, swr, axios, bootstrap, mapbox-gl
+### next.js, mongodb, swr, axios, bootstrap, mapbox-gl, turf
 
-- Set up a Next.js API that uses SWR and Axios to connect to a Mongodb collection of geojson map features.
-- Filter the geojson features with queries and aggregations to create - layers on a Mapbox map.
+- Set up a Next.js API that connects to a Mongodb collection of geojson map features using SWR and Axios.
+- Filter the geojson features with queries and aggregations to create layers on a Mapbox map.
 - Use the interactive map and Bootstrap forms to filter, create, update, or delete features in the database.
 
-## Getting Started
+## Get Started
 
-First, import the modules:
+Import the modules:
 
 ```bash
 npm install
@@ -18,7 +18,7 @@ npm install
 yarn install
 ```
 
-Then, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
