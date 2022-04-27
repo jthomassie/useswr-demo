@@ -1,6 +1,7 @@
 # useswr-demo
 
-next mongodb api swr bootstrap mapbox-gl
+### next = mongodb api swr bootstrap mapbox-gl
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
