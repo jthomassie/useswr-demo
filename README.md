@@ -26,25 +26,21 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/features](http://localhost:3000/api/features).
-
-This endpoint can be edited in `pages/api/features.js`.
+- [http://localhost:3000](http://localhost:3000) - open the dev version of the app in your browser
+- [API endpoints](https://nextjs.org/docs/api-routes/introduction) - access endpoints [http://localhost:3000/api/features](http://localhost:3000/api/features).
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js, Mongodb, and Next's API features, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - about Next.js features and API
+- [Next.js documentation](https://nextjs.org/docs) - Next.js reference and examples
 - [Learn Next.js](https://nextjs.org/learn) - interactive tutorial
-- [Learn Mongodb queries asnd aggregations](https://www.mongodb.com/docs/manual/) - reference and examples
+- [Learn Mongodb queries and aggregations](https://www.mongodb.com/docs/manual/) - Mongodb reference and examples
 - [Integrating Mongodb and Next.js](https://www.mongodb.com/developer/how-to/nextjs-with-mongodb/) - interactive tutorial
 
 ## Deploy on Vercel
 
-An easy way to deploy Next.js apps is [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) - easily deploy Next.js apps with APIs
+- [Next.js deployment documentation](https://nextjs.org/docs/deployment) - Next.js reference and examples
